@@ -1,1 +1,133 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .info div {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #f0f0f0;
+            border-radius: 6px;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .info {
+                flex-direction: column;
+            }
+
+            .profile-pic {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Currículum</h1>
+    </header>
+
+    <section>
+        <div style="text-align: center;">
+            <img class="profile-pic" src="Foto.jpeg" alt="Foto de perfil">
+        </div>
+    </section>
+
+    <section>
+        <h2>Datos Personales</h2>
+        <div class="info">
+            <div>
+                <h3>Nombre</h3>
+                <p>Verner Manuel Acabal Del Cid</p>
+            </div>
+            <div>
+                <h3>Correo Electrónico</h3>
+                <p>25010369@galileo.edu</p>
+            </div>
+            <div>
+                <h3>Teléfono</h3>
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experiencia Laboral</h2>
+        <div>
+            <h3>Tecnico de servicio zona Americas</h3>
+            <p>ALTA Beverage Systems Inc. - Miami FL, USA | Jun 2007 - enero 2017</p>
+            <ul>
+                <li>Instalacion, mantenimiento mecatronico en equipos de inspeccion para la industria de embotellado en la region de America y el caribe.</li>
+                <li>Desarrollo de soluciones en inspectores de vision artificial Filtec/Spectrovision </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>R & D inspectores de vision artificial ALTAVision</h3>
+            <p>ALTA Beverage Systems Inc. - Miami FL, USA | Enero 2017- Actualidad</p>
+            <ul>
+                <li>Se desarrolla desde cero el algoritmo de seguimiento "Tracking" para botellas a velocidades de hasta 3000 evases por minuto con microcontroladores PIC. </li>
+                <li>Se realizo la integracion y creacion de algoritmos mediante el software para manejo de imagenes industriales "SAC Sirius Advanced Cybernetics" dando lugar al nacimiento de la marca de inspectores para la industria de embotellado "ALTAVision" </li>
+                <li>Desarrollador de algoritmos en software ZEBRA/AURORA para control de calidad en embotellado de alta velocidad </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <div>
+            <h3>Grado Diversificado</h3>
+            <p>Instituto tecnico labora KINAL - Guatemala, Guatemala | Enero 2000 - Octubre 2003</p>
+            <p>Perito en electronica industrial</p>
+            <h3>Grado Universitario</h3>
+            <p>Universidad Galileo - Guatemala, Guatemala | enero 2025 - Actualidad</p>
+            <p>Tecnico en desarrollo de software</p>
+        </div>
+    </section>
+</body>
+</html>
